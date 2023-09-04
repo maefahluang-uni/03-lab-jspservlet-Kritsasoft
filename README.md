@@ -30,6 +30,9 @@ You may study `testCaclulate1` as a sample. This test case should make a connect
 What benefit do we have from having integration tests in our project?
 ```
 Your though here
+The <executions> section defines two actions for the Jetty plugin: one to start Jetty before integration tests (pre-integration-test phase) and another to stop Jetty after integration tests (post-integration-test phase).
+
+This configuration lets you run unit tests (excluding those ending with "IT") and integration tests (using the Failsafe plugin) while managing an embedded Jetty server. It's a standard setup for web applications needing integration tests in a servlet container.
 ```
 
 
